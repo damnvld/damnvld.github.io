@@ -198,37 +198,6 @@ footer a:hover {
   gap: 40px;
 }
 
-.contact-text {
-  max-width: 400px;
-}
-
-.contact-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: var(--accent-color);
-}
-
-.contact-text h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.contact-text p {
-  font-size: 16px;
-  color: var(--subtext-color);
-}
-
-.contact-text a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-text a:hover {
-  text-decoration: underline;
-}
-
 form {
   flex: 1;
   min-width: 300px;
@@ -279,31 +248,6 @@ button:hover {
   background-color: #1481c3;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  .about-container,
-  .skills-grid,
-  .form-row,
-  .contact-section {
-    flex-direction: column;
-  }
-
-  .contact-text h1 {
-    font-size: 36px;
-  }
-
-  .contact-section {
-    padding: 40px 5%;
-  }
-}
 .timeline-section {
   margin-bottom: 40px;
 }
@@ -361,30 +305,65 @@ button:hover {
   cursor: pointer;
 }
 
+.contact-info {
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-box {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-box i {
+  color: var(--accent-color);
+  font-size: 20px;
+}
+
+.info-text h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info-text p {
+  margin: 4px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 25px;
-    right: 20px;
+  header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  header nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--card-color);
+  nav {
     margin-top: 10px;
   }
 
-  header nav.show {
-    display: flex;
+  .about-container,
+  .skills-grid,
+  .form-row,
+  .contact-section {
+    flex-direction: column;
   }
 
-  header nav a {
-    padding: 10px;
-    border-top: 1px solid #333;
+  .contact-section {
+    padding: 40px 5%;
   }
 }
-
 
